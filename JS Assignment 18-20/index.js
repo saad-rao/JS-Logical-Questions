@@ -104,3 +104,21 @@ for (let num = 0; num<userInput2; num++){
 
     }
 }
+
+
+
+//QS:8  Write a program to identify the smallest number in the given array.
+
+
+let nums = [42, 35, 87, 19, 21, 5, 6, 32, 89, 35, 2, 43, 0, 2];
+
+let smallest_Number = nums.reduce((accum,curr)=>{
+    if(accum<curr){
+        return accum
+    }
+    else{
+        return curr
+    }
+})
+
+document.write(`The smallest number in this array is: ${smallest_Number}`)
