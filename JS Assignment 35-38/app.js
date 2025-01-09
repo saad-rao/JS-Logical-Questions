@@ -14,7 +14,7 @@ sum(22,"saad")
 
 // we can find Even values by making function and using for loop 
 
-let userInput = prompt("Enter a number to find a even values between a number you enter")
+let input = prompt("Enter a number to find a even values between a number you enter")
 function even(range){
     let array= [];
     for(let i=0; i<=range; i++){
@@ -25,7 +25,7 @@ function even(range){
     return array
 }
 
-let evenNum = even(userInput)
+let evenNum = even(input)
 console.log(evenNum);
 
 
@@ -188,3 +188,18 @@ displayCounting()
 
 
 
+//QS:8  Write a function that calculates the area of a rectangle.
+// A = width * height
+// Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+
+function rectangle_area(width,height){
+    document.write("The Width of rectangle is = ",width,"<br>" );
+    document.write("The height of rectangle is = ",height ,"<br>")
+    area = width*height
+    return area
+    }
+    
+    document.write("The area of rectangle is :", rectangle_area(10,10))
