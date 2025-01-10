@@ -122,3 +122,24 @@ let smallest_Number = nums.reduce((accum,curr)=>{
 })
 
 document.write(`The smallest number in this array is: ${smallest_Number}`)
+
+
+
+//QS:8  Write a program to sum all the number in the given array.
+
+
+let number = [42, 35, 87, 19, 21, 5, 6, 32, 89, 35, 2, 43, 0, 2];
+
+let sumOfAll = number.reduce((accumulator,current)=>{
+   return accumulator+current
+})
+
+document.write(`Sum of this array is = ${sumOfAll}`)
+
+
+
+//QS:8  Write a program to multiply all the number in the given array.
+
+let num = [42, 35, 87, 19, 21, 5, 6, 32, 89, 35, 2, 43, 0, 2];
+
+let multiply = 
