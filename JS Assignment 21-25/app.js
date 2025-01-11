@@ -103,23 +103,23 @@ document.write(`Domain: ${extractDomain}`)
 // input in capital letters
 
 
-let userInput = prompt("Enter a word or sentence i can change it into uppercase");
+let userInput1 = prompt("Enter a word or sentence i can change it into uppercase");
 
-document.write(`userInput : ${userInput}` ,"</br>")
+document.write(`userInput : ${userInput1}` ,"</br>")
 
-document.write(`Upper Case: ${userInput.toUpperCase()}`)
+document.write(`Upper Case: ${userInput1.toUpperCase()}`)
 
 
-//QS:10 Write a program that takes user input. Convert and show the 
+// QS:10 Write a program that takes user input. Convert and show the 
 // input in title case
 
-// let userInput = prompt("Enter a word or sentence i can change it into Title Case");
+let userInput2 = prompt("Enter a word or sentence i can change it into Title Case");
 
-// document.write(`userInput : ${userInput}` ,"</br>")
+document.write(`userInput : ${userInput2}` ,"</br>")
 
-// let titleCase = userInput.charAt(0).toUpperCase();
+let titleCase = userInput2.charAt(0).toUpperCase();
 
-// document.write(`Title Case: ${titleCase}`)
+document.write(`Title Case: ${titleCase}`)
 
 
 //QS:11 You have an array
@@ -134,7 +134,7 @@ document.write(`Upper Case: ${userInput.toUpperCase()}`)
 
 let array = ["cake", "apple", "pie", "cookie", "chips", "patties"]
 
-let userInput = prompt("wellcome to abc bakery, what do you want to order sir/ma'am");
+let userInput3 = prompt("wellcome to abc bakery, what do you want to order sir/ma'am");
 
 //YA HUM NA 1 FLAG VARIABLE BANAYA HA 
 
@@ -147,7 +147,7 @@ let found = false;
 
 
 for (let i = 0; i <array.length; i++){
-    if(userInput.toLowerCase() === array[i]){
+    if(userInput3.toLowerCase() === array[i]){
        
  found=true
  break
@@ -155,11 +155,50 @@ for (let i = 0; i <array.length; i++){
 }
 
 if(found){
-    document.write(`${userInput} is available at index ${array.indexOf(userInput.toLowerCase())} in our bakery`)
+    document.write(`${userInput3} is available at index ${array.indexOf(userInput3.toLowerCase())} in our bakery`)
 }
 else{
-    document.write(`we are sorry ${userInput} is not available in our bakery`)
+    document.write(`we are sorry ${userInput3} is not available in our bakery`)
 
 }
+
+
+
+//QS:11  Write a program to display the last character of a user input.
+
+let userInput4 = prompt("Enter a number ",3243)
+
+document.write(`User input is : ${userInput4} <br>` )
+
+document.write(`Last character of user input is = `, userInput4.charAt(userInput4.length -1));
+
+
+if(userInput4 === ""){
+    alert("Enter a valid number")
+}
+
+
+//QS:12 You have a string “The quick brown fox jumps over the lazy dog”. 
+// Write a program to count number of occurrences of word “the” in given string.
+
+
+document.write(
+  "You have a string “The quick brown fox jumps over the lazy dog”. Write a program to count number of occurrences of word “the” in given string. <br> <br>")
+let text  = "The quick brown fox jumps over the lazy dog"
+
+lowerCase = text.toLowerCase()
+
+//Hum word find karne ka liya match method ka use karen ga jis ka syntax match(/\bthe\b/gi)
+// \b boundry ensure karta ha matlab jo word ap ko find karwana ha ap ko wo likhna pare ga 
+// /g globally jitne bhe "the" honge una find kare ga, pehla hon ya akhir ma 
+// i case sensitive matlab "The" or "the" dono ko match kare ga
+// Agar match() koi result return kare, toh uski length le lo.
+//Agar result null ho (matlab 'the' nahi mila), toh 0 return karo.
+
+
+find = (lowerCase.match(/\bthe\b/gi).length || 0 )
+
+document.write(`The word 'the' appears ${find} times.`);
+
 
 
