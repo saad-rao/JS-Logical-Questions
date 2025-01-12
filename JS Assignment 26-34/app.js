@@ -1,4 +1,4 @@
-                     // | MATH METHODS | DATE	METHODS
+                     // | MATH METHODS | DATE  METHODS
 
 
 
@@ -50,7 +50,7 @@ document.write(`ceil value : ${ceil}`,"<br>")
 // 100 in your browser.
 
 let generateRandom = Math.random()*100
-document.write  ( `random number between 1 to 100 : `,Math.floor(generateRandom));
+document.write(`random number between 1 to 100 : `,Math.floor(generateRandom));
 
 
 
@@ -58,8 +58,19 @@ document.write  ( `random number between 1 to 100 : `,Math.floor(generateRandom)
 // user input and display his weight in your browser. Possible user
 // inputs can be:
 
-let userWeight  = parseInt(prompt("Enter your weight in kilograms"))
-document.write(`The weight of user is ${userWeight} kilograms`)
+let userWeight  = prompt("Enter your weight")
+
+userWeight = parseFloat(userWeight)
+
+
+if(isNaN(userWeight)){
+    alert("Please Enter a valid integer or float input as your weight");
+}
+
+else{
+    document.write("your weight is"," ",Math.round(userWeight),"Kgs" )
+}
+
 
 
 // 5. Write a program that stores a random secret number from 1
@@ -89,7 +100,7 @@ console.log(time);
 // 7. Write a program that alerts the current month in words. For
 // example December.
 
-// let time = new Date()
+let time = new Date()
 
 ////hum is method se bhe kar sakte han locale string wale or
 ////array bana ka us se bhe kr sakte han
