@@ -52,14 +52,26 @@ function mouseout(){
 
 }
 
+//QS:4 Show a counter in browser. Counter should
+    //   increase by press increase button and decrease by press on decrease
+    //   button. And show updated counter value in browser.
 
-// QS:4 Create a signup form and display form data in your web
-// page on submission.
+    let sum = document.getElementById("counter")
+
+    count= 0
+
+    function add(){
+        let incBtn = document.getElementById('inc-btn')
+        count++
+        sum.innerHTML=count
+    }
 
 
-function signup(){
-    let email = document.getElementsByClassName('email')
-    let createPassword = document.getElementsByClassName('createpassword')
-    let confirmPassword = document.getElementsByClassName('confirmpassword')
 
-}
+    
+    function sub(){
+        let subBtn = document.getElementById('sub-btn')
+        count--
+        sum.innerHTML=count
+    }
+

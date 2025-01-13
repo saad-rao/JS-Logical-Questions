@@ -2,7 +2,7 @@
 
 
 
-//      1. Write a switch statement with the following condition:
+// 1. Write a switch statement with the following condition:
 // If the variable age is greater than 18, output "Old enough",
 // otherwise output "Too young".
 
