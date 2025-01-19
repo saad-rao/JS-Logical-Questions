@@ -30,4 +30,25 @@ document.write(`Ages Array: ${agesArray}`,"<br>","<br>")
 
 let adults = agesArray.filter(age =>  age>=18,)
 
-document.write(`The ages of people who are above 18 years old: ${adults} `)
+document.write(`The ages of people who are above 18 years old: ${adults} `,"<br>","<br>")
+
+
+
+
+
+
+document.write(`-------------------------QS:3--------------------------` ,"<br>","<br>")
+
+
+document.write(`QS: Make an array that represents the item prices in a shopping cart.
+Calculate the total price of the cart.`,"<br>","<br>")
+
+
+let cart =  [100, 50, 150, 200];
+
+document.write(`Cart Array : ${cart}`,"<br>","<br>")
+
+let totalPrice = cart.reduce((total,item)=>total + item,0)
+
+document.write(`Total price of the cart is = ${totalPrice}`)
+
