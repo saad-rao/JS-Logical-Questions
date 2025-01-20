@@ -88,3 +88,23 @@ document.write(`This is from FOR LOOP `,"<br>")
     document.write(`${displayNames}`,"<br>");
     
 }
+
+
+
+
+document.write(`-------------------------QS:5--------------------------` ,"<br>","<br>")
+
+document.write(`QS:Make an array that represents temperature readings (in °C).Filter only those readings that are below the freezing point (below 0°C).`,"<br>","<br>")
+
+
+let temperatures = [-5, 12, -3, 7, 0, -8, 15]
+
+document.write(`Temperatures:${temperatures}`,"<br>","<br>")
+
+let freezingTemp = temperatures.filter(temp => temp<=0)
+
+console.log(`Freezing temperature are: ${freezingTemp}`);
+
+
+
+
