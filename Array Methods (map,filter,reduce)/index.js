@@ -50,5 +50,41 @@ document.write(`Cart Array : ${cart}`,"<br>","<br>")
 
 let totalPrice = cart.reduce((total,item)=>total + item,0)
 
-document.write(`Total price of the cart is = ${totalPrice}`)
+document.write(`Total price of the cart is = ${totalPrice}`,"<br>","<br>")
 
+
+
+
+document.write(`-------------------------QS:4--------------------------` ,"<br>","<br>")
+
+
+
+document.write(`QS:Make an array that stores the names of employees. 
+Capitalize each employee's name and store them in a new array
+`,"<br>","<br>")
+
+
+let employees = ['ali', 'sarim', 'usman', 'khalid']
+
+document.write(`Employee's Name:${employees}`,"<br>","<br>")
+
+let capitalizedNames = employees.map(name => name.charAt(0).toUpperCase()+ name.slice(1))
+
+document.write(`Capitalize the first letter of each employee:${capitalizedNames}`,"<br>","<br>");
+
+
+document.write(`This same thing can be done from FOR LOOP`,"<br>","<br>")
+
+
+document.write(`This is from FOR LOOP `,"<br>")
+
+    for(let i =0; i<employees.length;i++){
+        
+    let capitalizedNames = employees[i].charAt(0).toUpperCase()
+
+    let displayNames = capitalizedNames+employees[i].slice(1)
+
+  
+    document.write(`${displayNames}`,"<br>");
+    
+}
