@@ -108,3 +108,34 @@ console.log(`Freezing temperature are: ${freezingTemp}`);
 
 
 
+document.write(`-------------------------QS:6--------------------------` ,"<br>","<br>")
+
+document.write(`QS:Make an array that represents the runs scored in each over of a cricket match. Calculate the total runs.`,"<br>","<br>")
+
+
+let scores = [10,12,7,8,9,8,15,20,6,10]
+
+document.write(`Score in each over is:${scores}`,"<br>","<br>")
+
+
+let totalScore = scores.reduce((total,over) => total+over,0  )
+
+document.write(`Total score of the 10 over is = ${totalScore}`,"<br>","<br>");
+
+
+
+document.write(`-------------------------QS:7--------------------------` ,"<br>","<br>")
+
+document.write(`QS:Make an array that represents the names of participants in an event. Create an array where each participant's name is written in the format [Hello ,].`,"<br>","<br>")
+
+
+let participants = ["Saad","Asad","Tahir","Owais","Ali","Bilal"]
+
+document.write(`Participants:${participants}`,"<br>","<br>")
+
+
+let formatNames = participants.map(name => `Hello , ${name}`,"<br>","<br>");
+
+document.write(`Participant's name is written in the format [Hello,]:<br>${formatNames}`);
+
+
