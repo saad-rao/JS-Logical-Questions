@@ -47,3 +47,24 @@ document.write(`Add a category :${product.category} and updated price is : ${pro
 
 
 document.write(`-------------------------QS:3--------------------------` ,"<br>","<br>")
+
+
+document.write(`Create an object that represents a student's marks subject wise. Print each subject along with its marks.`,"<br>","<br>")
+
+let studentMarks = {
+    Math : 90,
+    English : 80,
+    Science : 75
+}
+
+document.write(`Object of students Marks :let studentMarks = {
+    Math : 90,
+    English : 80,
+    Science : 75
+}`,"<br>","<br>")
+
+//FOR IN loop is only used for objects
+
+for (let subject in studentMarks){
+    document.write(`The marks of a student in ${subject} is = ${studentMarks[subject]} `,"<br>")
+}
