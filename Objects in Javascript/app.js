@@ -68,3 +68,56 @@ document.write(`Object of students Marks :let studentMarks = {
 for (let subject in studentMarks){
     document.write(`The marks of a student in ${subject} is = ${studentMarks[subject]} `,"<br>")
 }
+
+
+
+document.write(`-------------------------QS:4 --------------------------` ,"<br>","<br>")
+
+
+document.write(`Create an object that stores a book's data. Check if the author property exists in the object.`,"<br>","<br>")
+
+let book = {
+    title : "javascript basics",
+    pages : 100
+}
+
+document.write(`object of book:<br> let book = {
+    title : "javascript basics",
+    pages : 100
+}`,"<br>","<br>")
+
+// If we need to find the existence of a property in any object,
+// we use the hasOwnProperty method, which is used in data validation and error handling.
+
+let findAuthor = book.hasOwnProperty("author")
+
+document.write(`book.hasOwnProperty("author")`,"<br>","<br>")
+
+document.write(`The answer is : ${findAuthor}`,"<br>","<br>");
+
+
+
+document.write(`-------------------------QS:5 --------------------------` ,"<br>","<br>")
+
+
+document.write(`Merge two objects and store the result in a new object.`,"<br>","<br>")
+
+
+let person = {
+    name:"saad",
+    age:20
+}
+
+
+
+let job = {
+    title : "web developer",
+    company : "folio3"
+}
+
+// The spread operator (...) is used to merge objects.
+// Use case: Combining data from APIs into a single object.
+
+let mergedObjects = {...person , ...job}
+console.log(mergedObjects);
+
