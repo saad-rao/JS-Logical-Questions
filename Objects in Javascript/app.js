@@ -146,10 +146,38 @@ document.write(`delete productData.category`,"<br>","<br>")
 
 delete productData.category
 
-document.write(`delete operator is used to delete a object property`)
+document.write(`delete operator is used to delete a object property`,"<br>","<br>")
 
 console.log(productData);
 
 
 
+
+document.write(`-------------------------QS:7--------------------------` ,"<br>","<br>")
+
+document.write(`Create an object that stores a product's data. Convert its keys and values into separate arrays.`,"<br>","<br>")
+
+
+let productInfo = {
+    name:"mobile",
+    price:20000,
+    category:"Electronics"
+}
+
+document.write(`Object of Product : let productInfo = {
+    name:"mobile",
+    price:20000,
+    category:"Electronics"
+}`,"<br>","<br>")
+
+document.write(`let keys = Object.keys(productInfo) <br>
+let values = Object.values(productInfo)`,"<br>","<br>")
+
+let keys = Object.keys(productInfo)
+let values = Object.values(productInfo) 
+
+document.write(`If we log the keys and values to the console, we will get separate arrays for the keys and values.`)
+
+console.log(keys);
+console.log(values);
 
