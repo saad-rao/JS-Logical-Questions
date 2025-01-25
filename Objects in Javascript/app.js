@@ -121,3 +121,35 @@ let job = {
 let mergedObjects = {...person , ...job}
 console.log(mergedObjects);
 
+
+
+document.write(`-------------------------QS:6--------------------------` ,"<br>","<br>")
+
+document.write(`Create an object that stores a product's data. Delete the category property from the object.`,"<br>","<br>")
+
+
+let productData = {
+    name:"laptop",
+    price: 25000,
+    category:"Electronics"
+
+}
+
+document.write(`Object of product : let productData = {
+    name:"laptop",
+    price: 25000,
+    category:"Electronics"
+
+} `,"<br>","<br>")
+
+document.write(`delete productData.category`,"<br>","<br>")
+
+delete productData.category
+
+document.write(`delete operator is used to delete a object property`)
+
+console.log(productData);
+
+
+
+
