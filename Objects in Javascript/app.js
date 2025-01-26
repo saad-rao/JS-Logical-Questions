@@ -176,8 +176,41 @@ let values = Object.values(productInfo)`,"<br>","<br>")
 let keys = Object.keys(productInfo)
 let values = Object.values(productInfo) 
 
-document.write(`If we log the keys and values to the console, we will get separate arrays for the keys and values.`)
+document.write(`If we log the keys and values to the console, we will get separate arrays for the keys and values.`,"<br>","<br>")
 
 console.log(keys);
 console.log(values);
 
+
+
+
+document.write(`-------------------------QS:8--------------------------` ,"<br>","<br>")
+
+
+document.write(`Create a shallow copy of an object so that its data can be modified without altering the original object.`,"<br>","<br>")
+
+
+let personalInfo = {
+    name:"saad",
+    age:20,
+    gender:"male"
+}
+
+document.write(`let personalInfo = {
+    name:"saad",
+    age:20,
+    gender:"male"
+}
+`)
+
+
+
+let original = {...personalInfo}
+let copy = {...personalInfo}
+
+original.age=22
+copy.name="asad"
+
+console.log(original);
+
+console.log(copy);
