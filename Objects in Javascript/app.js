@@ -214,3 +214,7 @@ copy.name="asad"
 console.log(original);
 
 console.log(copy);
+
+
+
+
