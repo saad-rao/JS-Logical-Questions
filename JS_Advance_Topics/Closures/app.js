@@ -73,3 +73,23 @@ document.getElementById("btn").addEventListener("click", countClicks);
 
 // When you click the button, the result will update (e.g., "Clicks: 1", "Clicks: 2").
 // The button will not be removed; only the count below it will be updated.
+
+
+// document.write(`-------------------------QS:4--------------------------` ,"<br>","<br>")
+
+// Create a function makeMultiplier that takes a factor and returns a function that multiplies any number by 
+// that factor.
+
+
+function makeMultiplier(factor){
+ return function(num){
+return num*factor;
+ };
+};
+
+
+
+
+let double = makeMultiplier(2)
+console.log(double(10));
+
