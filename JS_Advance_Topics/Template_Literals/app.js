@@ -11,7 +11,18 @@ console.log(message);
 // Q2: Expression Evaluation in Template Literals
 // Calculate the area of a rectangle dynamically using template literals.
 
-const length = 10;
-const width = 5;
-const areaMessage = `The area of the rectangle is ${length*width} square units`
+let length = 10;
+let width = 5;
+let areaMessage = `The area of the rectangle is ${length*width} square units`
 console.log(areaMessage);
+
+
+// Q3: Using Template Literals in an HTML Template Create a string that represents an HTML template 
+// using template literals.
+
+let title = "JavaScript Template Literals";
+let author = "John Doe";
+let article = `<h1>${title}</h1>
+ <p>${author}</p>`
+console.log(article);
+
