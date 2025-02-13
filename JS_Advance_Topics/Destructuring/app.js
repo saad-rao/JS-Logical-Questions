@@ -29,3 +29,18 @@ let lName = user.lastName
 
 console.log(fName); 
 console.log(lName); 
+
+
+
+// Q5: Skipping Elements in Array Destructuring
+
+// Extract the first and third elements from the array while skipping the second element.
+
+
+const colors = ["red", "blue", "green", "yellow"];
+
+let firstColor = colors[0]
+let thirdColor = colors[2]
+
+console.log(firstColor);  
+console.log(thirdColor);  
