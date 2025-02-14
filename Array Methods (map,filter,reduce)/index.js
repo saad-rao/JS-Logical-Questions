@@ -134,8 +134,8 @@ let participants = ["Saad","Asad","Tahir","Owais","Ali","Bilal"]
 document.write(`Participants:${participants}`,"<br>","<br>")
 
 
-let formatNames = participants.map(name => `Hello , ${name}`,"<br>","<br>");
+let formatNames = participants.map(name => "Hello"+` ${name}`,"<br>","<br>");
 
-document.write(`Participant's name is written in the format [Hello,]:<br>${formatNames}`);
+document.write(`Participant's name is written in the format:${formatNames}`);
 
 
