@@ -22,3 +22,17 @@ function createUser(username,role="User",isActive=true){
 }
 
 console.log(createUser("Saad"));
+
+
+
+// Q3: Merge Two Arrays Using Spread Operator
+
+// Use the spread operator to merge two arrays arr1 and arr2.
+
+
+let arr1 = [1,2,3,4];
+
+let arr2 = [5,6,7,8];
+
+let mergedArray = [...arr1,...arr2]
+console.log(mergedArray);
